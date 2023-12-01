@@ -1,18 +1,18 @@
-# Salesforce DX Project: Next Steps
+# Salesforce DX Project: REST API - Weather
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+Use Case
+As a call center nurse of the UK healthcare company, I need to check weather conditions in order to be able to have a full overview of any possible impact on the patient's health and be able to provide directions.
 
-## How Do You Plan to Deploy Your Changes?
+Requirements
+Create a Lightning Web Component that will be integrated into the Account layout
+Invoke openweathermap API in order to get the weather of the associated city (https://openweathermap.org/current )
+Display
+Temperature
+Description
+Icon (https://openweathermap.org/weather-conditions )
+Hint: For deserialization, you can create a wrapper that will have the same structure as a response instead of parse it.
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+Example: https://salesforce.stackexchange.com/questions/176866/json-deserialize-with-wrapper-class
 
-## Configure Your Salesforce DX Project
-
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
-
-## Read All About It
-
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+![LWC before getting weather](https://github.com/felipeportugalll/Exercise-3-REST-API/assets/108902942/c558cdab-4adc-4f1c-8e58-e4bd4d5fe11b)
+![Weather result](https://github.com/felipeportugalll/Exercise-3-REST-API/assets/108902942/838cf45f-eedc-4f7c-b677-649e40942e19)
