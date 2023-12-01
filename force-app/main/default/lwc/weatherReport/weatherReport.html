@@ -1,0 +1,32 @@
+<template>
+    <lightning-card title="Weather Information" variant="narrow" icon-name="utility:world">
+            <div class="slds-p-around_medium">
+        <lightning-input type="text" label="Enter City Name"  placeholder="City..." onchange={handleInputChange}></lightning-input>
+    </div>
+    <div class="slds-p-around_medium">
+        <lightning-button label="Get Weather" variant="Brand" onclick={handleWeatherInfos}></lightning-button>
+    </div>
+            
+<!-- Display Weather -->			
+<template lwc:if={showWeatherInfos}>
+<div class="c-container">
+<lightning-layout horizontal-align="spread" multiple-rows>
+    <lightning-layout-item padding="around-small" size="12">
+       <span class="slds-text-title_bold"> City : {weatherInfos.city} </span>
+    </lightning-layout-item>
+    <lightning-layout-item padding="around-small" size="6">
+                    <span class="slds-text-title_bold"> Temperature : {weatherInfos.temperature} </span>
+    </lightning-layout-item>
+    <lightning-layout-item padding="around-small" size="6">
+        <span class="slds-text-title_bold"> Description : {weatherInfos.description} </span>
+     </lightning-layout-item>
+     <lightning-layout-item padding="around-small" size="6">
+        <span class="slds-text-title_bold"> Icon: <img src={iconUrl}/> </span>
+      </lightning-layout-item>
+        </lightning-layout>
+
+</div>
+</template>
+</lightning-card>
+    
+</template>
